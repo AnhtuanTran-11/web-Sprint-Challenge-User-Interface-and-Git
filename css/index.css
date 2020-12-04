@@ -204,7 +204,52 @@ footer nav {
     font-size: 14px;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+footer nav a { 
+    color: white; 
+    text-decoration: none; 
+}
+
+/* >>>>>>>>>>>>>>>>>>>> CSS About Page <<<<<<<<<<<<<<<<<<<< */
+
+.top-content-about {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content-about p {
+    margin-bottom: 20px;
+}
+
+#middleSectionAbout .imageContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px auto 30px 10px;
+    border-bottom: 1px dashed black;
+
+}
+
+.topMiddle {
+    display: flex;
+    justify-content: space-evenly
+}
+
+button {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    padding: 6px 24px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+
+#middleSectionAbout .bottomText p {
+    margin-bottom: 20px;
 }
