@@ -79,10 +79,43 @@ p {
     border-bottom: 1px dashed black;
 }
 
+/* Styles the header to be inline-block */
+#header {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+/* Styles and creates a flex module for the top navigation bar */
+#topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 1px solid black;
+    margin: 1.5rem auto 2rem auto;
+}
+
+/* Styles the anchor tags in top navigation bar */
+#topNav a {
+    text-decoration: none;
+    border: 1px solid black;
+    color: #030811;
+    font-size: 0.9rem;
+    text-rendering: geometricPrecision;
+
+/* Styles the Lambda logo */
+#topNav #lambdaLogo {
+    
+}
+
+/* Styles the header image */
+#headerImage {
+    
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
