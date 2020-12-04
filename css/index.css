@@ -78,6 +78,7 @@ p {
     margin: 0 auto;
 }
 
+/* >>>>>>>>>>>>>>>>>>>> Top section <<<<<<<<<<<<<<<<<<<< */
 /* Creates, styles, and arranges a flex module for top content */
 .top-content {
     display: flex;
@@ -117,23 +118,28 @@ p {
     padding-bottom: 20px;
 }
 
+/* >>>>>>>>>>>>>>>>>>>> Middle content <<<<<<<<<<<<<<<<<<<< */
+
 /* Creates space and dashed line at the border bottom */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+/*  Styles the h2 elements in the middle section */
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
 
+/* Creates a flexbox module for the boxes in the middle section */
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+/* Sizes and aligns the boxes in the middle section */
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -145,6 +151,7 @@ p {
     justify-content: center;
 }
 
+/* Adds color to the boxes */
 .middle-content .boxes .box:nth-child(1) {
     background-color: teal;
 }
@@ -176,25 +183,34 @@ p {
     background-color: dodgerblue;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>> Bottom content <<<<<<<<<<<<<<<<<<<< */ 
+
+/* Creates flexbox module for bottom content */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
 
+/* Adds padding to the text in the bottom */
 .bottom-content .text-container {
     padding-right: 4%;
 }
 
+/* Adds padding to the text container in the bottom content */
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
 
+/* >>>>>>>>>>>>>>>>>>>> Footer <<<<<<<<<<<<<<<<<<<< */
+
+/* Sizes and colors the footer */
 footer {
     width: 100%;
     background: black;
 }
 
+/* Creates, sizes, and aligns flexbox module for footer nav */
 footer nav {
     width: 60%;
     display: flex;
@@ -204,6 +220,7 @@ footer nav {
     font-size: 14px;
 }
 
+/* Colors the anchor tag and removes underline */
 footer nav a { 
     color: white; 
     text-decoration: none; 
@@ -211,45 +228,51 @@ footer nav a {
 
 /* >>>>>>>>>>>>>>>>>>>> CSS About Page <<<<<<<<<<<<<<<<<<<< */
 
+/* Aligns the top content on the about page */
 .top-content-about {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+/* Aligns the p element on the about page */
 .top-content-about p {
     margin-bottom: 20px;
 }
 
+/* Adds flexbox module to the images in the middle section of the about page */
 #middleSectionAbout .imageContainer {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
 }
 
+/* Adds flexbox module to the text in the middle section of the about page */
 .textContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin: 10px auto 30px 10px;
     border-bottom: 1px dashed black;
-
 }
 
+/* Aligns flexbox to the top-middle content of the about page */
 .topMiddle {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
+/* Aligns p element in the middle section the about page */
+#middleSectionAbout .bottomText p {
+    margin-bottom: 20px;
+}
+
+/* Styles and aligns the button elements */
 button {
     align-self: flex-start;
     margin-bottom: 20px;
-    padding: 6px 24px;
-    border-radius: 6px;
+    padding: 10px 24px;
+    border-radius: 9px;
     margin-top: 20px;
     border: 2px solid black;
     font-size: 1rem;
-}
-
-#middleSectionAbout .bottomText p {
-    margin-bottom: 20px;
 }
