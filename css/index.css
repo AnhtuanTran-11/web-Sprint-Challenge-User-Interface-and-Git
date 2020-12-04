@@ -47,30 +47,38 @@ table {
 	border-spacing: 0;
 }
 
+/* >>>>>>>>>>>>>>>>>>>> CSS Styling <<<<<<<<<<<<<<<<<<< */
+
+/* Includes the padding and border into the total width and height of elements */
 * {
     box-sizing: border-box;
 }
 
+/* Styles the whole page to have 100% and specidies a font family */
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Styles h1 - h5 elements to have specific font, font size, and bottom margin */
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
+/* Sets the line height for all paragrah elements */
 p {
     line-height: 1.4;
 }
 
+/* Creates a container for content */
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+/* Creates, styles, and arranges a flex module for top content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,45 +87,37 @@ p {
     border-bottom: 1px dashed black;
 }
 
-/* Styles the header to be inline-block */
-#header {
-    display: inline-block;
-    border: 1px solid black;
-}
-
 /* Styles and creates a flex module for the top navigation bar */
 #topNav {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border: 1px solid black;
     margin: 1.5rem auto 2rem auto;
 }
 
 /* Styles the anchor tags in top navigation bar */
 #topNav a {
     text-decoration: none;
-    border: 1px solid black;
     color: #030811;
     font-size: 0.9rem;
     text-rendering: geometricPrecision;
-
-/* Styles the Lambda logo */
-#topNav #lambdaLogo {
-    
+    margin-right: 2rem;
 }
 
 /* Styles the header image */
 #headerImage {
-    
+    box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 
+/* Sizes the text and container the top content */
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;
 }
 
+/* Creates space and dashed line at the border bottom */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -143,6 +143,37 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box:nth-child(1) {
+    background-color: teal;
+}
+.middle-content .boxes .box:nth-child(2) {
+    background-color: gold;
+}
+.middle-content .boxes .box:nth-child(3) {
+    background-color: cadetblue;
+}
+.middle-content .boxes .box:nth-child(4) {
+    background-color: coral;
+}
+.middle-content .boxes .box:nth-child(5) {
+    background-color: crimson;
+}
+.middle-content .boxes .box:nth-child(6) {
+    background-color: forestgreen;
+}
+.middle-content .boxes .box:nth-child(7) {
+    background-color: darkorchid;
+}
+.middle-content .boxes .box:nth-child(8) {
+    background-color: hotpink;
+}
+.middle-content .boxes .box:nth-child(9) {
+    background-color: indigo;
+}
+.middle-content .boxes .box:nth-child(10) {
+    background-color: dodgerblue;
 }
 
 .bottom-content {
