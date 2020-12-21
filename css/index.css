@@ -47,30 +47,39 @@ table {
 	border-spacing: 0;
 }
 
+/* >>>>>>>>>>>>>>>>>>>> CSS Styling <<<<<<<<<<<<<<<<<<< */
+
+/* Includes the padding and border into the total width and height of elements */
 * {
     box-sizing: border-box;
 }
 
+/* Styles the whole page to have 100% and specidies a font family */
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Styles h1 - h5 elements to have specific font, font size, and bottom margin */
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
+/* Sets the line height for all paragrah elements */
 p {
     line-height: 1.4;
 }
 
+/* Creates a container for content */
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+/* >>>>>>>>>>>>>>>>>>>> Top section <<<<<<<<<<<<<<<<<<<< */
+/* Creates, styles, and arranges a flex module for top content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,28 +88,58 @@ p {
     border-bottom: 1px dashed black;
 }
 
+/* Styles and creates a flex module for the top navigation bar */
+#topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 1.5rem auto 2rem auto;
+}
+
+/* Styles the anchor tags in top navigation bar */
+#topNav a {
+    text-decoration: none;
+    color: #030811;
+    font-size: 0.9rem;
+    text-rendering: geometricPrecision;
+    margin-right: 2rem;
+}
+
+/* Styles the header image */
+#headerImage {
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+/* Sizes the text and container the top content */
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
+/* >>>>>>>>>>>>>>>>>>>> Middle content <<<<<<<<<<<<<<<<<<<< */
+
+/* Creates space and dashed line at the border bottom */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+/*  Styles the h2 elements in the middle section */
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
 
+/* Creates a flexbox module for the boxes in the middle section */
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+/* Sizes and aligns the boxes in the middle section */
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -112,25 +151,66 @@ p {
     justify-content: center;
 }
 
+/* Adds color to the boxes */
+.middle-content .boxes .box:nth-child(1) {
+    background-color: teal;
+}
+.middle-content .boxes .box:nth-child(2) {
+    background-color: gold;
+}
+.middle-content .boxes .box:nth-child(3) {
+    background-color: cadetblue;
+}
+.middle-content .boxes .box:nth-child(4) {
+    background-color: coral;
+}
+.middle-content .boxes .box:nth-child(5) {
+    background-color: crimson;
+}
+.middle-content .boxes .box:nth-child(6) {
+    background-color: forestgreen;
+}
+.middle-content .boxes .box:nth-child(7) {
+    background-color: darkorchid;
+}
+.middle-content .boxes .box:nth-child(8) {
+    background-color: hotpink;
+}
+.middle-content .boxes .box:nth-child(9) {
+    background-color: indigo;
+}
+.middle-content .boxes .box:nth-child(10) {
+    background-color: dodgerblue;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>> Bottom content <<<<<<<<<<<<<<<<<<<< */ 
+
+/* Creates flexbox module for bottom content */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
 
+/* Adds padding to the text in the bottom */
 .bottom-content .text-container {
     padding-right: 4%;
 }
 
+/* Adds padding to the text container in the bottom content */
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
 
+/* >>>>>>>>>>>>>>>>>>>> Footer <<<<<<<<<<<<<<<<<<<< */
+
+/* Sizes and colors the footer */
 footer {
     width: 100%;
     background: black;
 }
 
+/* Creates, sizes, and aligns flexbox module for footer nav */
 footer nav {
     width: 60%;
     display: flex;
@@ -140,7 +220,59 @@ footer nav {
     font-size: 14px;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+/* Colors the anchor tag and removes underline */
+footer nav a { 
+    color: white; 
+    text-decoration: none; 
+}
+
+/* >>>>>>>>>>>>>>>>>>>> CSS About Page <<<<<<<<<<<<<<<<<<<< */
+
+/* Aligns the top content on the about page */
+.top-content-about {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+/* Aligns the p element on the about page */
+.top-content-about p {
+    margin-bottom: 20px;
+}
+
+/* Adds flexbox module to the images in the middle section of the about page */
+#middleSectionAbout .imageContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+/* Adds flexbox module to the text in the middle section of the about page */
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px auto 30px 10px;
+    border-bottom: 1px dashed black;
+}
+
+/* Aligns flexbox to the top-middle content of the about page */
+.topMiddle {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Aligns p element in the middle section the about page */
+#middleSectionAbout .bottomText p {
+    margin-bottom: 20px;
+}
+
+/* Styles and aligns the button elements */
+button {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    padding: 10px 24px;
+    border-radius: 9px;
+    margin-top: 20px;
+    border: 2px solid black;
+    font-size: 1rem;
 }
